@@ -5,7 +5,7 @@
 		}
 		
 		body{
-			background-color: #E81212;
+			background-color: #77EDF7;
 		}
 		.marco {
 		  display: grid;
@@ -76,7 +76,7 @@
 
 		.contador{
 			float: right;
-			color: red;
+			color: white;
 			font-size: 16px;
 			text-align: center;
 			padding: 14px 16px;
