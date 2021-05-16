@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+autor: Fernando
+fecha: Abril 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>VicioGames-Inicio</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	<link href="css/fichero.css" rel="stylesheet" />
+		
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="js/12mayo-login-desconectar.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+</head>
+
+
+<body>
+
+	<div class="marco">
+		<div class="encabezado">
+			<div class="botones">
+			<a href="Inicio.html"><button onclick="clickCounter()" type="button">Inicio</button></a>
+			<a href="Novedades.html"><button onclick="clickCounter()" type="button">Novedades</button></a>
+			<div class="contador">Has visto <span id="mensaje">X</span> páginas</div>
+			</div>
+		</div>
+		<div class="migas"><h1>INICIO</h1></div>
+		
+		<div class="contenido">
+			
+		<div class="NACE">
+		<p>Nombre: Fernando Claudio</br>Apellidos: Moreno Sedano</br>Curso: 1ºDAM</br>Edad: 19 años</p>
+		</br>
+		<img id="Foto1"src="C:\Users\Fernando\Documents\GitHub\trabajoT2\Imagenes\Foto1.jpeg"/>
+		</div>
+		<div class="porquedam">
+		<p>¿Por qué DAM?Siempre me gusto la tecnologia, y siempre me han gustado los videojuegos, asi que no fue muy complicado atar cabos para llegar a la conclusio de que debia estudiar, Desarrollo de Aplicaciones Multiplataforma, ese seria el primer paso despues del bachiller, ademas hoy en dia utilizamos ordenadores (ya sean telefonos moviles, pc, o cualquier consola) practicamente todos los dias, lo que hace indispensable el conocimiento sobre la informatica, por lo que al estudiar DAM mataba dos pajaros de un tiro: Por un lado estudio aquello que me apasiona, y por otro aprendo todo lo necesario para saber arreglarmelas con un ordenador en caso de problemas de cualquier tipo.</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="infocentro">
+		<p>Información sobre CENEC:</br> <!-- Me base en la informacion de la propia pagina del centro  -->
+		<img src="C:\Users\Fernando\Documents\GitHub\trabajoT2\Imagenes\FotoCenec.jpg" width=20% height=auto/></br>
+		El centro de formación Cenec se encuentra en la Calle Hernán Ruiz.</br>
+		Más de 24.000 alumnos han sido formados en alrededor de las últimas 3 decadas, eso nos da una idea de la calidad, compromiso, experiencia, conocimiento, pasión por la tecnología, proactividad</br> y prestigio del equipo, que los han convertido en el partner imprescindible de la industria para buscar y contratar a los mejores profesionales. 
+		Ademas cuentan con líderes tecnológicos, apoyando</br> su labor de formación en el mundo digital a través de alianzas estratégicas, mecenazgo y colaboración.
+		</p>
+		</div>
+		</div>
+		
+		<div class="pie">email de contacto: olakasen@gmail.com</br>Año 2021</div>
+	</div>
+
+<script>
+		// aqui el codigo ...
+		actualizar();
+		function actualizar(){
+		if(sessionStorage.contador){
+			sessionStorage.contador=Number(sessionStorage.contador) + 1;
+		}else{
+			sessionStorage.setItem("contador", 1);
+		}
+		$("#mensaje").text(sessionStorage.contador);
+	}
+	</script>
+</body>
+</html>
