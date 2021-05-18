@@ -85,7 +85,7 @@
 
 
 
-		.container {
+		.ZOOM1 {
   width: 900px;
   height: 600px;
   background: #000;
@@ -95,13 +95,13 @@
 
 
 }
-.container:hover .fondo {
+.ZOOM1:hover .fondo {
   -webkit-transform: scale(0.8) translate(-50%, -50%);; 
       -ms-transform: scale(0.8) translate(-50%, -50%);; 
           transform:  translate(-50%, -50%);; 
 
 }
-.container:hover .front {
+.ZOOM1:hover .front {
   -webkit-transform: scale(0.45);
       -ms-transform: scale(0.45);
           transform: scale(0.45);
