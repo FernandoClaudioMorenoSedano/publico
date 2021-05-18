@@ -96,9 +96,9 @@
 
 }
 .ZOOM1:hover .fondo {
-  -webkit-transform: scale(0.8) translate(-50%, -50%);; 
-      -ms-transform: scale(0.8) translate(-50%, -50%);; 
-          transform:  translate(-50%, -50%);; 
+  -webkit-transform: scale(1); 
+      -ms-transform: scale(1); 
+          transform: scale(1); 
 
 }
 .ZOOM1:hover .front {
@@ -108,17 +108,8 @@
 
 }
 
-.fondo {
-	width:10px;
-	height:10px;
- object-fit: cover;
-position: absolute;
-  -webkit-transform: scale(1) translate(-50%, -50%);;
-      -ms-transform: scale(1) translate(-50%, -50%);;
-          transform:  translate();;
-  /*-webkit-transition: -webkit-transform 1s;
-          transition: transform 1s;*/
-}
+
+
 
 .front {
   object-fit: cover;
@@ -128,4 +119,10 @@ position: absolute;
           transform: scale(0.1);
   -webkit-transition: -webkit-transform 1s;
           transition: transform 1s;
+}
+
+img {
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
 }
