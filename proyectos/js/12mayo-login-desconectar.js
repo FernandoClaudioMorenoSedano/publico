@@ -42,7 +42,7 @@ function controlar(){
 			validarXML();
 			// tardo un poco en recargar para dar tiempo a AJAX?
 			for(let timer=1;timer<1000000;timer++);
-			location.reload();
+			window.location.assign("index.html");
 			
 		} else {
 			// estado 1 de nuestro diagrama de estados - sin usuario
@@ -87,7 +87,7 @@ function controlar(){
 				miFuncion(this);
 			}
 		};
-		xhr.open("GET", "data/registrados.xml", true);
+		xhr.open("GET", "https://fernandoclaudiomorenosedano.github.io/publico/proyectos/data/Registrados.xml", true);
 		xhr.send();
 	}
 
