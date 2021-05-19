@@ -10,7 +10,7 @@
 		.marco {
 		  display: grid;
 		  grid-template-columns: auto;
-		  grid-template-rows: 150px 40px auto 40px;
+		  grid-template-rows: 50px 40px auto 40px;
 		  grid-gap: 10px;
 		  width: 100vw;
 		  height: 100vh;
@@ -87,7 +87,7 @@
 
 		.ZOOM1 {
   width: 900px;
-  height: 600px;
+  height: 500px;
   background: #000;
   overflow: hidden;
   margin: 25px auto;
@@ -108,8 +108,20 @@
 
 }
 
+.img1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
 
-
+.img2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+  -webkit-transform: translate(0%, -25%);
+      -ms-transform: translate(0%, -25%);
+          transform: translate(0%, -25%);
+}
 
 .front {
   object-fit: cover;
@@ -118,11 +130,12 @@
       -ms-transform: scale(1);
           transform: scale(0.1);
   -webkit-transition: -webkit-transform 1s;
+  	  -ms-transition: -ms-transform 1s;
           transition: transform 1s;
 }
 
 .fondo {
     width: 900px;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
 }
