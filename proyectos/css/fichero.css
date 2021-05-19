@@ -98,7 +98,7 @@
 .ZOOM1:hover .fondo {
   -webkit-transform: scale(1); 
       -ms-transform: scale(1); 
-          transform: scale(1); 
+          transform: scale(0.5); 
 
 }
 .ZOOM1:hover .front {
@@ -138,4 +138,10 @@
     width: 900px;
     height: 500px;
     object-fit: cover;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  	  -ms-transition: -ms-transform 1s;
+          transition: transform 1s;
 }
