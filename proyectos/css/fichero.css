@@ -121,7 +121,7 @@
           transition: transform 1s;
 }
 
-img {
+.fondo {
     width: 900px;
     height: 600px;
     object-fit: cover;
