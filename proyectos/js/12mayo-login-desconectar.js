@@ -42,7 +42,7 @@ function controlar(){
 			validarXML();
 			// tardo un poco en recargar para dar tiempo a AJAX?
 			for(let timer=1;timer<1000000;timer++);
-			window.location.assign("index.html");
+			//window.location.assign("index.html");
 			
 		} else {
 			// estado 1 de nuestro diagrama de estados - sin usuario
