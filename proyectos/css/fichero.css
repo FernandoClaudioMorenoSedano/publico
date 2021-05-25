@@ -145,3 +145,7 @@
   	  -ms-transition: -ms-transform 1s;
           transition: transform 1s;
 }
+
+button#desconectar {
+    margin-top: 10px;
+}

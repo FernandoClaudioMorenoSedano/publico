@@ -38,7 +38,7 @@ fecha: Abril 2021
 </head>
 
 
-<body onload="clicKCounter()">
+<body onload="controlar()">
 
 	<div class="marco">
 		<div class="encabezado">
@@ -47,7 +47,6 @@ fecha: Abril 2021
 			<a href="Novedades.html">Novedades</a>
 			<a id="ingresar" href="login.html">Ingresar</a>
 			 <button id="desconectar" onclick="desconectar()" style="display: none;" type="button">Desconectar</button>
-			<div class="contador">Has visto <span id="mensaje">X</span> páginas</div>
 			</div>
 		</div>
 		<div class="migas"><h1>INICIO</h1></div>
@@ -77,18 +76,5 @@ fecha: Abril 2021
 		
 		<div class="pie">email de contacto: olakasen@gmail.com</br>Año 2021</div>
 	</div>
-
-<script>
-		// aqui el codigo ...
-		actualizar();
-		function actualizar(){
-		if(sessionStorage.contador){
-			sessionStorage.contador=Number(sessionStorage.contador) + 1;
-		}else{
-			sessionStorage.setItem("contador", 1);
-		}
-		$("#mensaje").text(sessionStorage.contador);
-	}
-	</script>
 </body>
 </html>

@@ -22,7 +22,7 @@ fecha: Marzo 2021
 	<!-- una hoja de estilos externa-->
 	<link href="css/fichero.css" rel="stylesheet" />
 	<!-- una hoja de estilos personalizada-->
-	<link href="00-modelo.css" rel="stylesheet"/>
+	
 	
 	<!-- iconos u otros elementos externos -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -34,20 +34,21 @@ fecha: Marzo 2021
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
 	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
-	<script src="00-modelo.js"></script>
+	<script src="js/12mayo-login-desconectar.js"></script>
 	
 	<!-- scripts personalizados Javascript o JQuery -->
 </head>
 
 
-<body onload="clicKCounter()">
+<body onload="controlar()">
 
 	<div class="marco">
 		<div class="encabezado">
 			<div class="botones">
 			<a href="index.html">Inicio</a>
 			<a href="Novedades.html">Novedades</a>
-			<div class="contador">Has visto <span id="mensaje">X</span> páginas</div>
+			<a id="ingresar" href="login.html">Ingresar</a>
+			 <button id="desconectar" onclick="desconectar()" style="display: none;" type="button">Desconectar</button>
 			</div>
 		</div>
 		<div class="migas"><h1>NOVEDADES</h1></div>
@@ -76,7 +77,7 @@ fecha: Marzo 2021
 		-La ubicación física aproximada del usuario, a partir de la dirección de su protocolo de internet (IP), en algunos casos es posible ver en qué calle está el usuario.
 		</br>
 		</br>
-		<img id="Foto1"src="C:\Users\Fernando\Documents\GitHub\trabajoT2\Imagenes\PixelEspia2.jpg"/>
+		<img id="Foto1"src=""/>
 		</br>
 		Estos pixeles de seguimiento suelen ser un archivo .GIF o .PNG que es tan pequeño como 1x1 píxeles, que se inserta en el encabezado, pie de página o en el cuerpo de un correo electrónico.
 		</br>
@@ -91,18 +92,5 @@ fecha: Marzo 2021
 		</div>
 		<div class="pie">email de contacto: olakasen@gmail.com</br>Año 2021</div>
 	</div>
-
-<script>
-		// aqui el codigo ...
-		actualizar();
-		function actualizar(){
-		if(sessionStorage.contador){
-			sessionStorage.contador=Number(sessionStorage.contador) + 1;
-		}else{
-			sessionStorage.setItem("contador", 1);
-		}
-		$("#mensaje").text(sessionStorage.contador);
-	}
-	</script>
 </body>
 </html>
