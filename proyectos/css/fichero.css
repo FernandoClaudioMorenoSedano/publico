@@ -130,8 +130,8 @@
       -ms-transform: scale(1);
           transform: scale(0.1);
   -webkit-transition: -webkit-transform 1s;
-  	  -ms-transition: -ms-transform 1s;
-          transition: transform 1s;
+  	  -ms-transition: -ms-transform 10s;
+          transition: transform 10s;
 }
 
 .fondo {
@@ -142,8 +142,8 @@
         -ms-transform: scale(1);
             transform: scale(1);
   -webkit-transition: -webkit-transform 1s;
-  	  -ms-transition: -ms-transform 1s;
-          transition: transform 1s;
+  	  -ms-transition: -ms-transform 10s;
+          transition: transform 10s;
 }
 
 button#desconectar {
